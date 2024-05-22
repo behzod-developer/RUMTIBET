@@ -1,0 +1,49 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a button{
+    background-color: #1A3E3E;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-menu-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .nav-menu-btn{
+        display: flex;
+    }
+    nav ul{
+        display: none;
+    }
+}
