@@ -1,0 +1,67 @@
+.child-about-text{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-btn{
+    background-color: rgba(26, 62, 62, 1);
+    color: rgba(253, 253, 253, 1);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.about .container .parent{
+    gap: 120px;
+}
+
+.about .container{
+    padding: 120px 0;
+}
+
+.about .container .parent .child-about-text h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(24, 18, 30, 1);
+}
+
+.about .container .parent p{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.about .container .parent .child-about-text span{
+    color: rgba(242, 190, 34, 1);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.mobile-image-about{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .about-image{
+        display: none;
+    }
+    .about-mobile-image{
+        display: block;
+    }
+    .child-about-text{
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+    .mobile-image-about{
+        display: block;
+    }
+
+    .about .container .parent{
+        gap: 0;
+        padding: 0 5%;
+        flex-direction: column;
+        gap:50px;
+    }
+}
